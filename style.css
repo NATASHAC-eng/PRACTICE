@@ -1,0 +1,119 @@
+
+
+body{
+    margin: 0;/*makes sure all body-contents start from the edge */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+
+/*css targetting the whole header block background color and content color .,,placing the logo and nav in the same line and creating space between them*/
+
+.header {
+    padding: 0 45px; /*clockwise*/
+    background-color: 
+    #633b34;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+ }
+
+    /*css targetting the nav links color and underline decoration*/
+.nav a{
+    color: #ffffff;
+    text-decoration:none;
+    display: block;/*makes it possible for the list to respond to hovering effect*/
+    transition:all 0.5s ease-out;/*makes transition slower*/
+}  
+
+/*the .na a:hover says- only apply these styles when the element is being hovered & its targeting our links on the list*/
+.nav a:hover{
+  color: blue;
+  transform:rotate(45deg);
+ 
+}
+
+
+/*css targetting the syle of the list on the nav to remove bullets and to push them to the wall or edge...placing the list items in the same line and creating space between them*/
+.nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;/*however this wont create space between list*/
+    align-items: center;
+}
+
+.nav li{
+    margin-left: 10px;
+}
+/*.......................................*/
+
+.WELCOME{
+    background-color:  #8f7d76;
+    padding: 60px 45px;
+    display:flex;
+    justify-content:center;
+}
+
+.contentA{
+   max-width:550px; /*makes content to shrink without the scroll bar*/
+  }
+
+.WELCOME h1{
+     margin:0; /*reduces space between paragraph and h1*/
+
+}
+
+.WELCOME p {
+    line-height: 1.6; /*controlls space between my p1 lines*/
+}
+.WELCOME .button{
+    background-color: rgb(3, 67, 185);
+    border-radius:4px;
+    display:inline-block;
+    text-decoration: none;
+    font-weight:bold;
+    color: #ffffff;
+    padding: 10px; /*expands area covered by the link*/
+}
+/*.................................*/
+
+.infor{
+    background-color:#dfd5d3;
+    padding:60px 45px;/*covers space betwwen the welcome div at the top an dthe bottom infor div*/
+}
+
+.infor .columns{
+    max-width: 1000px;/*reduces area coverd by the column div */
+    margin:0 auto; /*centers the who div without causing scrolling*/
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;/*allows quotes to be divided into small areas covering fr fraction of the area...use fr instaed of % to avoid the scroll bar on smaller screens..browser will automaticaly account for grid column gap*/
+    column-gap:45px;
+    row-gap:30px;
+}
+
+.item h3{
+    color:#1a0704;
+    font-size: 1/5rem;
+    font-weight:20px;
+    margin:0;/*u myt see no change here coz the p margin is still occupying the space*/
+    font-style: italic;
+    
+}
+
+.item p{
+    margin:0; /*u will see the space deleted*/
+    line-height:1.6;
+    color:rgb(14, 49, 70) ;
+}
+
+.footer {
+      text-align: center;
+      padding:20px 0;
+      color: #999;
+}
+
+
